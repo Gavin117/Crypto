@@ -17,7 +17,7 @@ def get_trending():
     return coins
 
 
-def parse_data(coin_list):#random shit atm
+def parse_data(coin_list):
     btc = get_price_vs_usd('bitcoin')
     btc_usd = float(btc['bitcoin']['usd'])
     data= []

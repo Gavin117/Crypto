@@ -2,6 +2,11 @@
 
 To use generate api keys by creating an account with twitter developers.
 
-The bot listening to certain twitter accounts for a mention of the top cryptocurrencies,
-if a tweet contains a popular cryptocurrency it will send a discord message if a webhook url is provided,
-it's also quite easy to add a trading buy order to the script if that sort of thing interests you.
+The bot listens to user defined twitter ids for a mention of the top cryptocurrencies.
+
+If a tweet contains a popular cryptocurrency that corresponds with a crypto in the crypto.txt file,
+A message will be sent to Discord if a webhook url is provided.
+
+To add or remove cryptocurriences, edit the cryptos.txt file.
+
+

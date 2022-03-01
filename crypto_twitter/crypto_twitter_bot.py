@@ -23,15 +23,13 @@ def search_tweet_for_crypto(tweet):
         x = cryptos.split(',')
         x = [i.replace('\'','') for i in x]
         x= [i.lower().strip() for i in x]
-        names = [i for i in x[::2]]
-        tickers = [i for i in x[1::2]]
         hashtags = ['#'+i for i in x[::2]]
         cashtags = ['$'+i for i in x[1::2]]
         hashtickers = ['#'+i for i in x[1::2]]
-        return names,tickers,hashtags,cashtags,hashtickers
+        return x,hashtags,cashtags,hashtickers
     
-    name, tick,hashtag,cashtag, hashtick = crypto_list()
-    crypto_list = name + tick + hashtag + cashtag + hashtick
+    names,hashtag,cashtag, hashtick = crypto_list()
+    crypto_list = name+ hashtag + cashtag + hashtick
     words = tweet.strip().split(' ')
     words = [i.lower() for i in words]
     for word in words:

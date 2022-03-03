@@ -14,7 +14,7 @@ follow = []
 
 Or
 
-Un comment:
+Un comment and replace screen_name="your account"
 
 '''
 print('Bot is listening to the following twitter accounts:')
